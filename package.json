@@ -1,0 +1,22 @@
+{
+  "name": "v8-interop-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "test:node": "vitest run --coverage --browser.enabled=false",
+    "test:istanbul": "vitest run --coverage --coverage.provider=istanbul"
+  },
+  "devDependencies": {
+    "@vitest/browser-playwright": "5.0.5",
+    "@vitest/coverage-istanbul": "5.0.5",
+    "@vitest/coverage-v8": "5.0.5",
+    "playwright": "1.64.1",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-is": "18.3.1"
+  }
+}
